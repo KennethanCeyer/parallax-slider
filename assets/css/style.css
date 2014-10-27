@@ -1,0 +1,244 @@
+/* 
+   - Name  : Reset Style
+   - Date  : 2014-05-20
+   - Group : Style Group 01
+*/
+
+@charset "UTF-8";
+
+html {
+	height: 100%;
+}
+
+/* Initialize all element margin */
+html, body,
+div, span,
+dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+blockquote, p, address, pre, cite,
+form, fieldset, input, textarea, select,
+table, th, td,address {
+	margin:0;
+	padding:0;
+	*zoom: 1;
+}
+
+/* Subject Elements */
+h1, h2, h3, h4, h5, h6 {
+	font-size:100%;
+	font-weight:normal;
+	line-height:1;
+}
+
+/* Removing borders */
+fieldset, img, abbr,acronym { border:0 none; }
+
+/* List Elements */
+ol, ul { list-style:none; }
+
+/* Removing hr element */
+hr { display: none; }
+
+/* ETC */
+img, fieldset {
+    border: 0 none;
+	vertical-align:top;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+	border:0 none;
+	}
+caption, th, td {
+	text-align:left;
+	font-weight: normal;
+}
+address, caption, strong, em, cite {
+	font-weight:normal;
+	font-style:normal;
+	}
+ins { text-decoration:none; }
+del { text-decoration:line-through; }
+blockquote:before, blockquote:after, q:before, q:after { content:""; }
+blockquote,q { quotes:"" ""; }
+hr { display:none; }
+a:link, a:hover, a:visited, a:active {
+	color: #6B6B6B;
+	text-decoration: none;
+}
+input {vertical-align:middle;}
+select {vertical-align:middle;}
+
+/* For html5 */
+article, aside, detail, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;}
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {margin:0; padding:0;}
+[hidden], area, base, basefont, command, datalist, head,
+input[type=hidden], link, menu[type=context], meta, noembed, noframes,
+param, script, source, style, track, title
+{/* case-insensitive */
+	display:none;
+}
+address, article, aside, blockquote, body, center, dd, dir, div, dl,
+dt, figure, figcaption, footer, form, h1, h2, h3, h4, h5, h6, header,
+hgroup, hr, html, legend, listing, menu, nav, ol, p, plaintext, pre,
+section, summary, ul, xmp{display:block;}
+table {display:table;}
+caption {display:table-caption;}
+colgroup {display:table-column-group;}
+col {display:table-column;}
+thead {display:table-header-group;}
+tbody {display:table-row-group;}
+tfoot {display:table-footer-group;}
+tr {display:table-row;}
+td, th {display:table-cell;}
+li {display:list-item;}
+ruby {display: ruby;}
+rt {display: ruby-text;}
+
+/* Style Sheet Start ========================================================== */
+#wrap {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+#wrap #slide-view {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#wrap #slide-view .slide-visual {
+	width: 1000px;
+	height: 400px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#wrap #slide-view .slide-visual .slide_tint {
+	position: absolute;
+	top: 0;
+	z-index: 50;
+	width: 2000px;
+	height: 100%;
+	background-color: #ffffff;
+	opacity: .6;
+	filter: alpha(opacity=60);
+	-ms-filter: alpha(opacity=60);
+}
+
+#wrap #slide-view .slide-visual .slide_tint.left {
+	right: 1000px;
+}
+
+#wrap #slide-view .slide-visual .slide_tint.right {
+	left: 1000px;
+}
+
+#wrap #slide-view .slide-visual .script-wrap {
+	width: 276px;
+	height: 288px;
+	padding: 20px;
+	position: absolute;
+	top: 36px;
+	right: 100px;
+}
+
+#wrap #slide-view .slide-visual .script-wrap .script-inner {
+	overflow: hidden;
+	position: relative;
+}
+
+#wrap #slide-view .slide-visual .script-wrap .script-tint {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #ffffff;
+	opacity: .6;
+	filter: alpha(opacity=60);
+	-ms-filter: alpha(opacity=60);
+}
+
+#wrap #slide-view .slide-visual .script-wrap .slide-pagination {
+	width: 100%;
+	*width: 84px;
+	position: absolute;
+	left: 0;
+	*left: 50%;
+	*margin-left: -62px;
+	bottom: 0;
+	padding: 40px 20px;
+	z-index: 60;
+	text-align: center;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#wrap #slide-view .slide-visual .script-wrap .slide-pagination .btn-page {
+	display: inline-block;
+	*display: block;
+	*float: left;
+	width: 8px;
+	height: 8px;
+	margin: 0 2px;
+	border-radius: 50%;
+	border: 1px solid #aaaaaa;
+	text-indent: -10000px;
+	overflow: hidden;
+	-moz-transition: background-color .3s ease;
+	-webkit-transition: background-color .3s ease;
+	-o-transition: background-color .3s ease;
+	transition: background-color .3s ease;
+}
+
+#wrap #slide-view .slide-visual .script-wrap .slide-pagination .btn-page:hover,
+#wrap #slide-view .slide-visual .script-wrap .slide-pagination .btn-page:focus {
+	background-color: #d8d8d8;
+}
+
+#wrap #slide-view .slide-visual .script-wrap .slide-pagination .btn-page.on {
+	background-color: #aaaaaa;
+}
+
+#wrap #slide-view .slide-visual .script-wrap .slide-controller {
+	position: absolute;
+	left: 0;
+	bottom: 84px;
+	width: 100%;
+	text-align: center;
+	z-index: 60;
+}
+
+#wrap #slide-view .slide-visual .script-wrap .slide-controller a {
+	display: inline-block;
+	margin: 0 20px;
+	opacity: .6;
+	filter: alpha(opacity=60);
+	-ms-filter: alpha(opacity=60);
+	-moz-transition: opacity .3s ease;
+	-webkit-transition: opacity .3s ease;
+	-o-transition: opacity .3s ease;
+	transition: opacity .3s ease;
+}
+
+#wrap #slide-view .slide-visual .script-wrap .slide-controller a:focus,
+#wrap #slide-view .slide-visual .script-wrap .slide-controller a:hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	-ms-filter: alpha(opacity=100);
+}
+
+#wrap #slide-view .slide-visual .script-wrap .script-group {
+	position: relative;
+	z-index: 50;
+	overflow: hidden;
+}
+
+#wrap #slide-view .slide-visual .script-wrap .script-group li {
+	float: left;
+}
