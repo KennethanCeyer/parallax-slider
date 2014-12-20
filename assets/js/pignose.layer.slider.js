@@ -2,7 +2,7 @@
 *
 *  - PIGNOSE LayerSlider
 *  - DATE    2014-08-04
-*  - AUTHOR  PIGNOSE
+*  - AUTHOR  PIGNOSE (http://kennethan.dothome.co.kr)
 *  - VERSION 0.0.1
 *  - LICENCE MIT
 *
