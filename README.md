@@ -1,7 +1,7 @@
 PIGNOSE-LayerSlider
 ===================
 
-> This slider support a parallax sliding effect. [See Demo](http://www.pigno.se/barn/PIGNOSE-LayerSlider/)
+> This slider support the parallax sliding effects. [See Demo](http://www.pigno.se/barn/PIGNOSE-LayerSlider/)
 
 - Version 0.0.1
 - Licenced MIT
@@ -11,7 +11,7 @@ PIGNOSE-LayerSlider
 
 ### Usage
 
-> Refer index.html document.
+> Please refer index.html document.
 
 #### HTML
 
