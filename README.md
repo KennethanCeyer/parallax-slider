@@ -7,6 +7,8 @@ PIGNOSE-LayerSlider
 - Licenced MIT
 - Update Aug, 04, 2014
 
+![Sample](http://www.nhpcw.com/upload/2015-09-19%2B%25EC%2598%25A4%25EC%25A0%2584%2B2-51-51_091915025205.jpg)
+
 ### Usage
 
 > Refer index.html document.
