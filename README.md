@@ -32,7 +32,7 @@ PIGNOSE-LayerSlider
  <script type="text/javascript" src="assets/js/pignose.layerslider.min.js"></script>
 ```
 
-## If you are using the Bower
+### If you are using the Bower
 
 1. open a command line and type this
 
