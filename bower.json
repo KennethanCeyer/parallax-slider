@@ -1,0 +1,27 @@
+{
+  "name": "pg-layerslider",
+  "version": "0.0.1",
+  "homepage": "http://www.pigno.se/barn/PIGNOSE-LayerSlider",
+  "authors": [
+    "PIGNOSE"
+  ],
+  "description": "The slider to support prallax animation with jQuery.",
+  "main": "index.html",
+  "keywords": [
+    "pignose",
+    "layerslider",
+    "prallax",
+    "jQuery",
+    "plugin",
+    "slider",
+    "plugin"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
