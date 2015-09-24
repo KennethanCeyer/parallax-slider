@@ -33,7 +33,7 @@ PIGNOSE-LayerSlider
 
 ### Usage
 
-[Check demo and documents](http://www.pigno.se/barn/PIGNOSE-LayerSlider/)
+- [Check demo and documents](http://www.pigno.se/barn/PIGNOSE-LayerSlider/)
 
 > Refer to below exhibit.
 
