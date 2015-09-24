@@ -6,6 +6,7 @@ PIGNOSE-LayerSlider
 - Version 0.0.1
 - Licenced MIT
 - Update Aug, 04, 2014
+- This plugin supports most browser Internet Explorer 8+, Chrome, Firefox, Safari, Opera.
 
 ![Sample](http://www.pigno.se/barn/PIGNOSE-LayerSlider/assets/img/sample.jpg)
 
