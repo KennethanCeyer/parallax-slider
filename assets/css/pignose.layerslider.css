@@ -96,7 +96,7 @@
 	height: 8px;
 	margin: 0 2px;
 	border-radius: 50%;
-	border: 1px solid #aaaaaa;
+	border: 1px solid #ffffff;
 	text-indent: -10000px;
 	overflow: hidden;
 	-moz-transition: background-color .3s ease;
@@ -107,11 +107,11 @@
 
 #visual .slide-visual .script-wrap .slide-pagination .btn-page:hover,
 #visual .slide-visual .script-wrap .slide-pagination .btn-page:focus {
-	background-color: #d8d8d8;
+	background-color: #ffffff;
 }
 
 #visual .slide-visual .script-wrap .slide-pagination .btn-page.on {
-	background-color: #aaaaaa;
+	background-color: #ffffff;
 }
 
 #visual .slide-visual .script-wrap .slide-controller {
