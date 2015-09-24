@@ -37,7 +37,7 @@ PIGNOSE-LayerSlider
 1. open a command line and type this
 
  ```shell
-bower install pg-gallery
+bower install pg-layerslider
  ```
  
 2. move `assets/js/pignose.gallery.min.js` to your project folder.
