@@ -21,7 +21,6 @@
 					easing      : 'easeInOutExpo',
 					diffTime    : 300,
 					controlAnim : true,
-					hover       : true,
 					pagination  : true,
 					auto        : true,
 					isLocal     : true,
@@ -46,6 +45,8 @@
 					var $target = (_this.settings.isLocal === true)? $view:$(document);
 					var $pagination;
 					var t;
+
+					$view.addClass('pignose-layerslider');
 
 					if(typeof _this.settings.play !== 'undefined' &&
 					   _this.settings.play !== null
@@ -104,9 +105,7 @@
 					_this.$script = $script.data('type', 'script');
 					_this.currIdx = 0;
 
-					if($script.length > 0 &&
-					   _this.settings.pagination === true
-					) {
+					if(_this.settings.pagination === true) {
 						$pagination = $('<div class="slide-pagination"></div>');
 						$pagination.appendTo($script.parent());
 						_this.$pagination = $pagination;
@@ -120,24 +119,32 @@
 
 						$li.each(function(idx) {
 							width += $li.width();
-
-							if($pagination.length > 0 && !$pagination.hasClass('completedPagination')) {
-								$page = $('<a href="#" class="btn-page">' + (idx + 1) + '번째 슬라이드 보기</a>');
-								if(idx == _this.currIdx) $page.addClass('on');
-								$page.bind('click.slideControlHandler', function(event) {
-									var offset    = ($(this).index() - _this.currIdx);
-									var direction = 'right';
-									if(offset < 0) {
-										direction = 'left';
-										offset *= -1;
-									}
-									pignoseLayerSlider.move.apply(_this, new Array(direction, offset, true));
-									event.preventDefault();
-								});
-								$page.appendTo($pagination);
+							if($script.length > 0 &&
+							   _this.settings.pagination === true
+							) {
+								if($pagination.length > 0 && !$pagination.hasClass('completedPagination')) {
+									$page = $('<a href="#" class="btn-page">' + (idx + 1) + '번째 슬라이드 보기</a>');
+									if(idx == _this.currIdx) $page.addClass('on');
+									$page.bind('click.slideControlHandler', function(event) {
+										var offset    = ($(this).index() - _this.currIdx);
+										var direction = 'right';
+										if(offset < 0) {
+											direction = 'left';
+											offset *= -1;
+										}
+										pignoseLayerSlider.move.apply(_this, new Array(direction, offset, true));
+										event.preventDefault();
+									});
+									$page.appendTo($pagination);
+								}
 							}
 						});
-						$pagination.addClass('completedPagination')
+
+						if($script.length > 0 &&
+						   _this.settings.pagination === true
+						) {
+							$pagination.addClass('completedPagination')
+						}
 
 						_this[$(this).data('type')] = {
 							offset     : width,
@@ -213,7 +220,10 @@
 							time += _this.settings.diffTime;
 						});
 					}
-					this.$pagination.children('.btn-page').eq(_this.currIdx).addClass('on').siblings('.on').removeClass('on');
+
+					if(_this.settings.pagination === true) {
+						this.$pagination.children('.btn-page').eq(_this.currIdx).addClass('on').siblings('.on').removeClass('on');
+					}
 				}
 			}
 		};

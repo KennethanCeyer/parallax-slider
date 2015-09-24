@@ -127,46 +127,82 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td>focus</td>
+						<td>speed</td>
 						<td><div class="label label-primary">number</div></td>
-						<td>0</td>
-						<td>initial index of focused image.</td>
+						<td>1200</td>
+						<td>the millisecond time for speed of the slide animation.</td>
 					</tr>
 					<tr>
-						<td>list</td>
-						<td><div class="label label-primary">jQuery object</div></td>
-						<td>null</td>
-						<td>the gallery thumbnails for gallery views.</td>
-					</tr>
-					<tr>
-						<td>lineWidth</td>
+						<td>interval</td>
 						<td><div class="label label-primary">number</div></td>
-						<td>3</td>
-						<td>line width for focus style.</td>
+						<td>3000</td>
+						<td>the millisecond time for interval of the slide animation.</td>
 					</tr>
 					<tr>
-						<td>lineColor</td>
+						<td>direction</td>
 						<td><div class="label label-primary">string</div></td>
-						<td>#d81208</td>
-						<td>line color for focus style.</td>
+						<td>right</td>
+						<td>the direction of slide animation.</td>
 					</tr>
 					<tr>
-						<td>time</td>
+						<td>diffTime</td>
 						<td><div class="label label-primary">number</div></td>
-						<td>2400</td>
-						<td>the millisecond time for change to animation.</td>
+						<td>300</td>
+						<td>the millisecond time that you wanna make parallax between main view and sub view.</td>
+					</tr>
+					<tr>
+						<td>controlAnim</td>
+						<td><div class="label label-primary">boolean</div></td>
+						<td>true</td>
+						<td>if you set this property to false, this plugin will ignore the status of animation queue.</td>
+					</tr>
+					<tr>
+						<td>pagination</td>
+						<td><div class="label label-primary">boolean</div></td>
+						<td>true</td>
+						<td>if you set this property to true, pagination controller will show.</td>
 					</tr>
 					<tr>
 						<td>auto</td>
 						<td><div class="label label-primary">boolean</div></td>
 						<td>true</td>
-						<td>if this property is on, you can pause/play to change the gallery by mouseover or mouseout.</td>
+						<td>if you set this property to true, this slider will start automatically.</td>
 					</tr>
 					<tr>
-						<td>hover</td>
+						<td>isLocal</td>
 						<td><div class="label label-primary">boolean</div></td>
 						<td>true</td>
-						<td>if this property is on, you can control them by mouseover on thumbnails</td>
+						<td>it is about play/pause/next/prev button area. it will find control button from anywhere, if you set the property true.</td>
+					</tr>
+					<tr>
+						<td>play</td>
+						<td><div class="label label-primary">jQuery object</div></td>
+						<td>null</td>
+						<td>the jQuery object of play button.</td>
+					</tr>
+					<tr>
+						<td>pause</td>
+						<td><div class="label label-primary">jQuery object</div></td>
+						<td>null</td>
+						<td>the jQuery object of pause button.</td>
+					</tr>
+					<tr>
+						<td>next</td>
+						<td><div class="label label-primary">jQuery object</div></td>
+						<td>null</td>
+						<td>the jQuery object of next button.</td>
+					</tr>
+					<tr>
+						<td>prev</td>
+						<td><div class="label label-primary">jQuery object</div></td>
+						<td>null</td>
+						<td>the jQuery object of prev button.</td>
+					</tr>
+					<tr>
+						<td>afterMove</td>
+						<td><div class="label label-danger">callback</div></td>
+						<td>null</td>
+						<td>this callback will be called after slider moved.</td>
 					</tr>
 				</tbody>
 			</table>
@@ -176,28 +212,209 @@
 			<ul class="nav nav-tabs tab">
 				<li role="presentation" class="active"><a href="#html" data-toggle="tab" aria-controls="html">HTML</a></li>
 				<li role="presentation"><a href="#javascript" data-toggle="tab" aria-controls="javascript">Javascript</a></li>
+				<li role="presentation"><a href="#css" data-toggle="tab" aria-controls="css">CSS</a></li>
 			</ul>
 			<div class="tab-content">
 				<div role="tabpanel" class="tab-pane active" id="html">
 					<pre><code class="language-markup">&lt;div id=&quot;visual&quot;&gt;
-	&lt;div class=&quot;gallery&quot;&gt;
-		&lt;img src=&quot;[[img src]]&quot; alt=&quot;&quot; /&gt;
-		&lt;img src=&quot;[[img src]]&quot; alt=&quot;&quot; /&gt;
-		&lt;img src=&quot;[[img src]]&quot; alt=&quot;&quot; /&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;gallery-thumbnails&quot;&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;[[thumbnail src]]&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;[[thumbnail src]]&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;[[thumbnail src]]&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+	&lt;div class=&quot;slide-visual&quot;&gt;
+		&lt;!-- Slide Image Area (1000 x 424) --&gt;
+		&lt;ul class=&quot;slide-group&quot;&gt;
+			&lt;li&gt;&lt;img src=&quot;assets/img/visual_slide01.jpg&quot; alt=&quot;Dummy Image&quot; /&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;img src=&quot;assets/img/visual_slide02.jpg&quot; alt=&quot;Dummy Image&quot; /&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;img src=&quot;assets/img/visual_slide03.jpg&quot; alt=&quot;Dummy Image&quot; /&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;img src=&quot;assets/img/visual_slide04.jpg&quot; alt=&quot;Dummy Image&quot; /&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;img src=&quot;assets/img/visual_slide05.jpg&quot; alt=&quot;Dummy Image&quot; /&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;img src=&quot;assets/img/visual_slide06.jpg&quot; alt=&quot;Dummy Image&quot; /&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+
+		&lt;!-- Slide Description Image Area (316 x 328) --&gt;
+		&lt;div class=&quot;script-wrap&quot;&gt;
+			&lt;ul class=&quot;script-group&quot;&gt;
+				&lt;li&gt;&lt;div class=&quot;inner-script&quot;&gt;&lt;img src=&quot;assets/img/visual_slide_script01.jpg&quot; alt=&quot;Dummy Image&quot; /&gt;&lt;/div&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;div class=&quot;inner-script&quot;&gt;&lt;img src=&quot;assets/img/visual_slide_script02.jpg&quot; alt=&quot;Dummy Image&quot; /&gt;&lt;/div&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;div class=&quot;inner-script&quot;&gt;&lt;img src=&quot;assets/img/visual_slide_script03.jpg&quot; alt=&quot;Dummy Image&quot; /&gt;&lt;/div&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;div class=&quot;inner-script&quot;&gt;&lt;img src=&quot;assets/img/visual_slide_script04.jpg&quot; alt=&quot;Dummy Image&quot; /&gt;&lt;/div&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;div class=&quot;inner-script&quot;&gt;&lt;img src=&quot;assets/img/visual_slide_script05.jpg&quot; alt=&quot;Dummy Image&quot; /&gt;&lt;/div&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;div class=&quot;inner-script&quot;&gt;&lt;img src=&quot;assets/img/visual_slide_script06.jpg&quot; alt=&quot;Dummy Image&quot; /&gt;&lt;/div&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;div class=&quot;slide-controller&quot;&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn-prev&quot;&gt;&lt;img src=&quot;assets/img/btn_prev.png&quot; alt=&quot;Prev Slide&quot; /&gt;&lt;/a&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn-play&quot;&gt;&lt;img src=&quot;assets/img/btn_play.png&quot; alt=&quot;Start Slide&quot; /&gt;&lt;/a&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn-pause&quot;&gt;&lt;img src=&quot;assets/img/btn_pause.png&quot; alt=&quot;Pause Slide&quot; /&gt;&lt;/a&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn-next&quot;&gt;&lt;img src=&quot;assets/img/btn_next.png&quot; alt=&quot;Next Slide&quot; /&gt;&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 				</div>
 				<div role="tabpanel" class="tab-pane" id="javascript">
-					<pre><code class="language-js">$(function() {
-	$('#visual .gallery').pignoseGallery({
-		list: $('#visual .gallery-thumbnails')
+					<pre><code class="language-js">$(window).load(function() {
+	$('#visual').pignoseLayerSlider({
+		play    : '.btn-play',
+		pause   : '.btn-pause',
+		next    : '.btn-next',
+		prev    : '.btn-prev'
 	});
 });</code></pre>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="css">
+					<pre><code class="language-css">.pignose-layerslider {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.pignose-layerslider,
+.pignose-layerslider * {
+	box-sizing: content-box;
+	-o-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+}
+
+.pignose-layerslider .slide-visual {
+	width: 1000px;
+	height: 400px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.pignose-layerslider .slide-visual .slide_tint {
+	position: absolute;
+	top: 0;
+	z-index: 50;
+	width: 2000px;
+	height: 100%;
+	background-color: #ffffff;
+	opacity: .6;
+	filter: alpha(opacity=60);
+	-ms-filter: alpha(opacity=60);
+}
+
+.pignose-layerslider .slide-visual .slide_tint.left {
+	right: 1000px;
+}
+
+.pignose-layerslider .slide-visual .slide_tint.right {
+	left: 1000px;
+}
+
+.pignose-layerslider .slide-visual .slide-group {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.pignose-layerslider .slide-visual .script-wrap {
+	width: 276px;
+	height: 288px;
+	padding: 20px;
+	position: absolute;
+	top: 36px;
+	right: 100px;
+}
+
+.pignose-layerslider .slide-visual .script-wrap .script-inner {
+	overflow: hidden;
+	position: relative;
+}
+
+.pignose-layerslider .slide-visual .script-wrap .script-tint {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #ffffff;
+	opacity: .6;
+	filter: alpha(opacity=60);
+	-ms-filter: alpha(opacity=60);
+}
+
+.pignose-layerslider .slide-visual .script-wrap .slide-pagination {
+	width: 100%;
+	*width: 84px;
+	position: absolute;
+	left: 0;
+	*left: 50%;
+	*margin-left: -62px;
+	bottom: 0;
+	padding: 40px 20px;
+	z-index: 60;
+	text-align: center;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.pignose-layerslider .slide-visual .script-wrap .slide-pagination .btn-page {
+	display: inline-block;
+	*display: block;
+	*float: left;
+	width: 8px;
+	height: 8px;
+	margin: 0 2px;
+	border-radius: 50%;
+	border: 1px solid #ffffff;
+	text-indent: -10000px;
+	overflow: hidden;
+	-moz-transition: background-color .3s ease;
+	-webkit-transition: background-color .3s ease;
+	-o-transition: background-color .3s ease;
+	transition: background-color .3s ease;
+}
+
+.pignose-layerslider .slide-visual .script-wrap .slide-pagination .btn-page:hover,
+.pignose-layerslider .slide-visual .script-wrap .slide-pagination .btn-page:focus {
+	background-color: #ffffff;
+}
+
+.pignose-layerslider .slide-visual .script-wrap .slide-pagination .btn-page.on {
+	background-color: #ffffff;
+}
+
+.pignose-layerslider .slide-visual .script-wrap .slide-controller {
+	position: absolute;
+	left: 0;
+	bottom: 84px;
+	width: 100%;
+	text-align: center;
+	z-index: 60;
+}
+
+.pignose-layerslider .slide-visual .script-wrap .slide-controller a {
+	display: inline-block;
+	margin: 0 20px;
+	opacity: .6;
+	filter: alpha(opacity=60);
+	-ms-filter: alpha(opacity=60);
+	-moz-transition: opacity .3s ease;
+	-webkit-transition: opacity .3s ease;
+	-o-transition: opacity .3s ease;
+	transition: opacity .3s ease;
+}
+
+.pignose-layerslider .slide-visual .script-wrap .slide-controller a:focus,
+.pignose-layerslider .slide-visual .script-wrap .slide-controller a:hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	-ms-filter: alpha(opacity=100);
+}
+
+.pignose-layerslider .slide-visual .script-wrap .script-group {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	list-style: none;
+	z-index: 50;
+	overflow: hidden;
+}
+
+.pignose-layerslider .slide-visual .script-wrap .script-group li {
+	float: left;
+}</code></pre>
 				</div>
 			</div>
 		</div>
