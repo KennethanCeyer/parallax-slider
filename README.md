@@ -17,6 +17,11 @@ PIGNOSE-LayerSlider
 
 - Check the jQuery library at [here](http://jquery.com/download/) `Recommend version 1.11.x higher`
 - Also need jQuery easing library at [here](http://gsgd.co.uk/sandbox/jquery/easing/)
+- And insert the snippets
+- ```html
+<script type="text/javascript" src="[[Your directory for javascript]]/jquery.latest.min.js"></script>
+<script type="text/javascript" src="[[Your directory for javascript]]/jquery.easing.js"></script>
+```
 
 ### Usage
 
