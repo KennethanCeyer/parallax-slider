@@ -97,3 +97,9 @@ $(window).load(function() {
 | controlAnim | `boolean` | true | if you set this property to false, this plugin will ignore the status of animation queue. |
 | pagination | `boolean` | true | if you set this property to true, pagination controller will show. |
 | auto | `boolean` | true | if you set this property to true, this slider will start automatically. |
+| isLocal | `boolean` | true | it is about play/pause/next/prev button area. it will find control button from anywhere, if you set the property true. |
+| play | `jQuery object` | null | the jQuery object of play button. |
+| pause | `jQuery object` | null | the jQuery object of pause button. |
+| next | `jQuery object` | null | the jQuery object of next button. |
+| prev | `jQuery object` | null | the jQuery object of prev button. |
+| afterMove | `callback` | null | this callback will be called after slider moved. |
