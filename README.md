@@ -1,7 +1,7 @@
 PIGNOSE-LayerSlider
 ===================
 
-> This slider support the parallax sliding effects. [See Demo](http://www.pigno.se/barn/PIGNOSE-LayerSlider/)
+> This slider supports the parallax sliding effects.
 
 - Version 0.0.1
 - Licenced MIT
@@ -11,12 +11,14 @@ PIGNOSE-LayerSlider
 
 ### Usage
 
-> Please refer index.html document.
+[Check demo and documents](http://www.pigno.se/barn/PIGNOSE-LayerSlider/)
+
+> Refer to below exhibit.
 
 #### HTML
 
 ```html
-<div id="slide-view">
+<div id="visual">
 	<div class="slide-visual">
 		<!-- Slide Image Area (1000 x 424) -->
 		<ul class="slide-group">
@@ -53,7 +55,7 @@ PIGNOSE-LayerSlider
 
 ```javascript
 $(window).load(function() {
-	$('#slide-view').pignoseLayerSlider({
+	$('#visual').pignoseLayerSlider({
 		play    : '.btn-play',
 		pause   : '.btn-pause',
 		next    : '.btn-next',
