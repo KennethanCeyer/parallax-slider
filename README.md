@@ -16,6 +16,7 @@ PIGNOSE-LayerSlider
 > This plugin needs `jQuery` library.
 
 - Check the jQuery library at [here](http://jquery.com/download/) `Recommend version 1.11.x higher`
+- Also need jQuery easing library at [here](http://gsgd.co.uk/sandbox/jquery/easing/)
 
 ### Usage
 
