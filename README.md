@@ -32,6 +32,16 @@ PIGNOSE-LayerSlider
  <script type="text/javascript" src="assets/js/pignose.layerslider.min.js"></script>
 ```
 
+### If you are using the Bower
+
+1. open a command line and type this
+
+ ```shell
+bower install pg-gallery
+ ```
+ 
+2. move `assets/js/pignose.gallery.min.js` to your project folder.
+
 ### Usage
 
 - [Check demo and documents](http://www.pigno.se/barn/PIGNOSE-LayerSlider/)
