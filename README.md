@@ -24,6 +24,13 @@ PIGNOSE-LayerSlider
 <script type="text/javascript" src="[[Your directory for javascript]]/jquery.easing.js"></script>
 ```
 
+- And load pignose-layerslider files(css, js)
+
+ ```html
+ <link rel="stylesheet" href="assets/css/pignose.layerslider.min.css" />
+ <script type="text/javascript" src="assets/js/pignose.layerslider.min.js"></script>
+```
+
 ### Usage
 
 [Check demo and documents](http://www.pigno.se/barn/PIGNOSE-LayerSlider/)
