@@ -9,6 +9,14 @@ PIGNOSE-LayerSlider
 
 ![Sample](http://www.pigno.se/barn/PIGNOSE-LayerSlider/assets/img/sample.jpg)
 
+## Start
+
+### Installation
+
+> This plugin needs `jQuery` library.
+
+- Check the jQuery library at [here](http://jquery.com/download/) `Recommend version 1.11.x higher`
+
 ### Usage
 
 [Check demo and documents](http://www.pigno.se/barn/PIGNOSE-LayerSlider/)
