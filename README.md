@@ -40,7 +40,7 @@ PIGNOSE-LayerSlider
 bower install pg-layerslider
  ```
  
-2. move `assets/js/pignose.gallery.min.js` to your project folder.
+2. move `assets/js/pignose.layerslider.min.js` and `assets/css/pignose.layerslider.min.css` to your project folder.
 
 ## Usage
 
