@@ -1,26 +1,89 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE HTML>
+<html lang="en-US">
 <head>
-	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<title>PIGNOSE Gallary Demo</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/for-demo/prism.css" />
+	<link rel="stylesheet" href="assets/css/pignose.layerslider.css" />
+	<style type="text/css">
+		@import url(https://fonts.googleapis.com/css?family=Raleway);
+		html, body {
+			position: relative;
+			height: 100%;
+		}
+
+		#wrapper {
+			padding-bottom: 40px;
+		}
+
+		.header {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding-top: 40px;
+			padding-bottom: 40px;
+			margin-bottom: 40px;
+			border-bottom: 1px solid #efefef;
+			text-align: center;
+		}
+
+		.header h1 {
+			margin-bottom: 20px;
+			font-size: 24px;
+			font-weight: 400;
+			font-family: 'Raleway', 'helvetica', 'sans-serif';
+			color: #333333;
+		}
+
+		#content, #sample {
+			width: 1200px;
+			margin: 0 auto;
+			margin-top: 40px;
+			padding-top: 40px;
+			border-top: 1px solid #efefef;
+			font-family: 'Raleway', 'helvetica', 'sans-serif';
+			text-align: center;
+		}
+
+		#content h3, #sample h3 {
+			margin-bottom: 40px;
+		}
+
+		#content table {
+			font-size: 115%;
+			text-align: left;
+		}
+
+		#sample pre {
+			font-size: 115%;
+		}
+	</style>
 	<script type="text/javascript" src="assets/js/jquery.latest.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.easing.js"></script>
-	<script type="text/javascript" src="assets/js/pignose.layer.slider.js"></script>
+	<script type="text/javascript" src="assets/js/pignose.layerslider.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/for-demo/prism.min.js"></script>
 	<script type="text/javascript">
+	//<![CDATA[
 		$(window).load(function() {
-			$('#slide-view').pignoseLayerSlider({
+			$('#visual').pignoseLayerSlider({
 				play    : '.btn-play',
 				pause   : '.btn-pause',
 				next    : '.btn-next',
 				prev    : '.btn-prev'
 			});
 		});
+	//]]>
 	</script>
-	<link rel="stylesheet" href="assets/css/style.css" />
-	<title>PIGNOSE LayerSlider</title>
 </head>
 <body>
-	<div id="wrap">
-		<div id="slide-view">
+	<div id="wrapper">
+		<div class="header">
+			<img src="assets/img/pignose-logo.jpg" alt="" />
+			<h1>PIGNOSE Gallery</h1>
+			<a href="https://github.com/KennethanCeyer/PIGNOSE-LayerSlider" target="_blank" class="btn btn-primary">View project on the Github</a>
+		</div>
+		<div id="visual">
 			<div class="slide-visual">
 				<!-- Slide Image Area (1000 x 424) -->
 				<ul class="slide-group">
@@ -48,6 +111,93 @@
 						<a href="#" class="btn-pause"><img src="assets/img/btn_pause.png" alt="Pause Slide" /></a>
 						<a href="#" class="btn-next"><img src="assets/img/btn_next.png" alt="Next Slide" /></a>
 					</div>
+				</div>
+			</div>
+		</div>
+		<div id="content">
+			<h3>options</h3>
+			<table class="table table-striped table-hover">
+				<thead>
+					<tr>
+						<th>name</th>
+						<th>value</th>
+						<th>default</th>
+						<th>description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>focus</td>
+						<td><div class="label label-primary">number</div></td>
+						<td>0</td>
+						<td>initial index of focused image.</td>
+					</tr>
+					<tr>
+						<td>list</td>
+						<td><div class="label label-primary">jQuery object</div></td>
+						<td>null</td>
+						<td>the gallery thumbnails for gallery views.</td>
+					</tr>
+					<tr>
+						<td>lineWidth</td>
+						<td><div class="label label-primary">number</div></td>
+						<td>3</td>
+						<td>line width for focus style.</td>
+					</tr>
+					<tr>
+						<td>lineColor</td>
+						<td><div class="label label-primary">string</div></td>
+						<td>#d81208</td>
+						<td>line color for focus style.</td>
+					</tr>
+					<tr>
+						<td>time</td>
+						<td><div class="label label-primary">number</div></td>
+						<td>2400</td>
+						<td>the millisecond time for change to animation.</td>
+					</tr>
+					<tr>
+						<td>auto</td>
+						<td><div class="label label-primary">boolean</div></td>
+						<td>true</td>
+						<td>if this property is on, you can pause/play to change the gallery by mouseover or mouseout.</td>
+					</tr>
+					<tr>
+						<td>hover</td>
+						<td><div class="label label-primary">boolean</div></td>
+						<td>true</td>
+						<td>if this property is on, you can control them by mouseover on thumbnails</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="sample">
+			<h3>sample</h3>
+			<ul class="nav nav-tabs tab">
+				<li role="presentation" class="active"><a href="#html" data-toggle="tab" aria-controls="html">HTML</a></li>
+				<li role="presentation"><a href="#javascript" data-toggle="tab" aria-controls="javascript">Javascript</a></li>
+			</ul>
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="html">
+					<pre><code class="language-markup">&lt;div id=&quot;visual&quot;&gt;
+	&lt;div class=&quot;gallery&quot;&gt;
+		&lt;img src=&quot;[[img src]]&quot; alt=&quot;&quot; /&gt;
+		&lt;img src=&quot;[[img src]]&quot; alt=&quot;&quot; /&gt;
+		&lt;img src=&quot;[[img src]]&quot; alt=&quot;&quot; /&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;gallery-thumbnails&quot;&gt;
+		&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;[[thumbnail src]]&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;[[thumbnail src]]&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;[[thumbnail src]]&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="javascript">
+					<pre><code class="language-js">$(function() {
+	$('#visual .gallery').pignoseGallery({
+		list: $('#visual .gallery-thumbnails')
+	});
+});</code></pre>
 				</div>
 			</div>
 		</div>

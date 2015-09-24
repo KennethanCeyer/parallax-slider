@@ -119,7 +119,7 @@
 						$li.clone().prependTo($(this)).addClass('slide-dummy');
 
 						$li.each(function(idx) {
-							width += $li.outerWidth(true);
+							width += $li.width();
 
 							if($pagination.length > 0 && !$pagination.hasClass('completedPagination')) {
 								$page = $('<a href="#" class="btn-page">' + (idx + 1) + '번째 슬라이드 보기</a>');
