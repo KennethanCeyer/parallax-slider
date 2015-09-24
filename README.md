@@ -48,7 +48,7 @@ bower install pg-gallery
 
 > Refer to below exhibit.
 
-### HTML
+#### HTML
 
 ```html
 <div id="visual">
@@ -84,7 +84,7 @@ bower install pg-gallery
 </div>
 ```
 
-### Javascript
+#### Javascript
 
 ```javascript
 $(window).load(function() {
