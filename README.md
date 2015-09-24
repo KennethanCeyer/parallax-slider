@@ -97,7 +97,7 @@ $(window).load(function() {
 });
 ```
 
-#### Options
+## Options
 
 | name | value | default | description |
 |------|-------|---------|-------------|
