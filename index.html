@@ -35,7 +35,7 @@
 			color: #333333;
 		}
 
-		#content, #sample {
+		.article {
 			width: 1200px;
 			margin: 0 auto;
 			margin-top: 40px;
@@ -45,16 +45,16 @@
 			text-align: center;
 		}
 
-		#content h3, #sample h3 {
+		.article h3 {
 			margin-bottom: 40px;
 		}
 
-		#content table {
+		.article table {
 			font-size: 115%;
 			text-align: left;
 		}
 
-		#sample pre {
+		.article pre {
 			font-size: 115%;
 		}
 	</style>
@@ -114,7 +114,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="content">
+		<div id="content" class="article">
 			<h3>options</h3>
 			<table class="table table-striped table-hover">
 				<thead>
@@ -207,7 +207,12 @@
 				</tbody>
 			</table>
 		</div>
-		<div id="sample">
+		<div id="bower" class="article">
+			<h3>bower</h3>
+			<blockquote><p>If you are using the bower serive.</p></blockquote>
+			<pre><code class="language-bash">bower install pg-layerslider</code></pre>
+		</div>
+		<div id="sample" class="article">
 			<h3>sample</h3>
 			<ul class="nav nav-tabs tab">
 				<li role="presentation" class="active"><a href="#html" data-toggle="tab" aria-controls="html">HTML</a></li>
