@@ -117,7 +117,7 @@ $(window).load(function() {
 
 ## Issues
 
-> We are welcome to announce the issue.
+> We are welcome about announcing the issue.
 
 Please inform us, If you find some problems.
 
