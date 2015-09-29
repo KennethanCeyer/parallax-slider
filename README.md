@@ -114,3 +114,11 @@ $(window).load(function() {
 | next | `jQuery object` | null | the jQuery object of next button. |
 | prev | `jQuery object` | null | the jQuery object of prev button. |
 | afterMove | `callback` | null | this callback will be called after slider moved. |
+
+## Issues
+
+> We are welcome to announce the issue.
+
+Please inform us, If you find some problems.
+
+Thank you!
