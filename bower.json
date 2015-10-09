@@ -1,7 +1,7 @@
 {
-  "name": "pg-layerslider",
-  "version": "0.0.1",
-  "homepage": "http://www.pigno.se/barn/PIGNOSE-LayerSlider",
+  "name": "pg-parallaxslider",
+  "version": "0.0.2",
+  "homepage": "http://www.pigno.se/barn/PIGNOSE-ParallaxSlider",
   "authors": [
     "PIGNOSE"
   ],
@@ -9,7 +9,7 @@
   "main": "index.html",
   "keywords": [
     "pignose",
-    "layerslider",
+    "parallaxslider",
     "prallax",
     "jQuery",
     "plugin",
@@ -23,5 +23,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "jQuery": ">= 1.11",
+    "jquery-ui": "~1.10.3"
+   }
 }

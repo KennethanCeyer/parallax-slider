@@ -2,10 +2,10 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
-	<title>PIGNOSE LayerSlider Demo</title>
+	<title>PIGNOSE ParallaxSlider Demo</title>
 	<link rel="stylesheet" href="assets/for-demo/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/for-demo/prism.css" />
-	<link rel="stylesheet" href="assets/css/pignose.layerslider.css" />
+	<link rel="stylesheet" href="assets/css/pignose.parallaxslider.css" />
 	<style type="text/css">
 		@import url(https://fonts.googleapis.com/css?family=Raleway);
 		html, body {
@@ -60,13 +60,13 @@
 	</style>
 	<script type="text/javascript" src="assets/for-demo/jquery.latest.min.js"></script>
 	<script type="text/javascript" src="assets/for-demo/jquery.easing.js"></script>
-	<script type="text/javascript" src="assets/js/pignose.layerslider.js"></script>
+	<script type="text/javascript" src="assets/js/pignose.parallaxslider.js"></script>
 	<script type="text/javascript" src="assets/for-demo/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/for-demo/prism.min.js"></script>
 	<script type="text/javascript">
 	//<![CDATA[
 		$(window).load(function() {
-			$('#visual').pignoseLayerSlider({
+			$('#visual').pignoseParallaxSlider({
 				play    : '.btn-play',
 				pause   : '.btn-pause',
 				next    : '.btn-next',
@@ -80,8 +80,8 @@
 	<div id="wrapper">
 		<div class="header">
 			<img src="assets/img/pignose-logo.jpg" alt="" />
-			<h1>PIGNOSE Layerslider</h1>
-			<a href="https://github.com/KennethanCeyer/PIGNOSE-LayerSlider" target="_blank" class="btn btn-primary">View project on the Github</a>
+			<h1>PIGNOSE Parallaxslider</h1>
+			<a href="https://github.com/KennethanCeyer/PIGNOSE-ParallaxSlider" target="_blank" class="btn btn-primary">View project on the Github</a>
 		</div>
 		<div id="visual">
 			<div class="slide-visual">
@@ -210,7 +210,7 @@
 		<div id="bower" class="article">
 			<h3>bower</h3>
 			<blockquote><p>If you are using the bower serive.</p></blockquote>
-			<pre><code class="language-bash">bower install pg-layerslider</code></pre>
+			<pre><code class="language-bash">bower install pg-parallaxslider</code></pre>
 		</div>
 		<div id="sample" class="article">
 			<h3>sample</h3>
@@ -255,7 +255,7 @@
 				</div>
 				<div role="tabpanel" class="tab-pane" id="javascript">
 					<pre><code class="language-js">$(window).load(function() {
-	$('#visual').pignoseLayerSlider({
+	$('#visual').pignoseParallaxSlider({
 		play    : '.btn-play',
 		pause   : '.btn-pause',
 		next    : '.btn-next',
@@ -264,29 +264,29 @@
 });</code></pre>
 				</div>
 				<div role="tabpanel" class="tab-pane" id="css">
-					<pre><code class="language-css">.pignose-layerslider {
+					<pre><code class="language-css">.pignose-parallaxslider {
 	display: block;
 	width: 100%;
 	margin: 0 auto;
 	overflow: hidden;
 }
 
-.pignose-layerslider,
-.pignose-layerslider * {
+.pignose-parallaxslider,
+.pignose-parallaxslider * {
 	box-sizing: content-box;
 	-o-box-sizing: content-box;
 	-moz-box-sizing: content-box;
 	-webkit-box-sizing: content-box;
 }
 
-.pignose-layerslider .slide-visual {
+.pignose-parallaxslider .slide-visual {
 	width: 1000px;
 	height: 400px;
 	margin: 0 auto;
 	position: relative;
 }
 
-.pignose-layerslider .slide-visual .slide_tint {
+.pignose-parallaxslider .slide-visual .slide_tint {
 	position: absolute;
 	top: 0;
 	z-index: 50;
@@ -298,21 +298,21 @@
 	-ms-filter: alpha(opacity=60);
 }
 
-.pignose-layerslider .slide-visual .slide_tint.left {
+.pignose-parallaxslider .slide-visual .slide_tint.left {
 	right: 1000px;
 }
 
-.pignose-layerslider .slide-visual .slide_tint.right {
+.pignose-parallaxslider .slide-visual .slide_tint.right {
 	left: 1000px;
 }
 
-.pignose-layerslider .slide-visual .slide-group {
+.pignose-parallaxslider .slide-visual .slide-group {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-.pignose-layerslider .slide-visual .script-wrap {
+.pignose-parallaxslider .slide-visual .script-wrap {
 	width: 276px;
 	height: 288px;
 	padding: 20px;
@@ -321,12 +321,12 @@
 	right: 100px;
 }
 
-.pignose-layerslider .slide-visual .script-wrap .script-inner {
+.pignose-parallaxslider .slide-visual .script-wrap .script-inner {
 	overflow: hidden;
 	position: relative;
 }
 
-.pignose-layerslider .slide-visual .script-wrap .script-tint {
+.pignose-parallaxslider .slide-visual .script-wrap .script-tint {
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -338,7 +338,7 @@
 	-ms-filter: alpha(opacity=60);
 }
 
-.pignose-layerslider .slide-visual .script-wrap .slide-pagination {
+.pignose-parallaxslider .slide-visual .script-wrap .slide-pagination {
 	width: 100%;
 	*width: 84px;
 	position: absolute;
@@ -354,7 +354,7 @@
 	-webkit-box-sizing: border-box;
 }
 
-.pignose-layerslider .slide-visual .script-wrap .slide-pagination .btn-page {
+.pignose-parallaxslider .slide-visual .script-wrap .slide-pagination .btn-page {
 	display: inline-block;
 	*display: block;
 	*float: left;
@@ -371,16 +371,16 @@
 	transition: background-color .3s ease;
 }
 
-.pignose-layerslider .slide-visual .script-wrap .slide-pagination .btn-page:hover,
-.pignose-layerslider .slide-visual .script-wrap .slide-pagination .btn-page:focus {
+.pignose-parallaxslider .slide-visual .script-wrap .slide-pagination .btn-page:hover,
+.pignose-parallaxslider .slide-visual .script-wrap .slide-pagination .btn-page:focus {
 	background-color: #ffffff;
 }
 
-.pignose-layerslider .slide-visual .script-wrap .slide-pagination .btn-page.on {
+.pignose-parallaxslider .slide-visual .script-wrap .slide-pagination .btn-page.on {
 	background-color: #ffffff;
 }
 
-.pignose-layerslider .slide-visual .script-wrap .slide-controller {
+.pignose-parallaxslider .slide-visual .script-wrap .slide-controller {
 	position: absolute;
 	left: 0;
 	bottom: 84px;
@@ -389,7 +389,7 @@
 	z-index: 60;
 }
 
-.pignose-layerslider .slide-visual .script-wrap .slide-controller a {
+.pignose-parallaxslider .slide-visual .script-wrap .slide-controller a {
 	display: inline-block;
 	margin: 0 20px;
 	opacity: .6;
@@ -401,14 +401,14 @@
 	transition: opacity .3s ease;
 }
 
-.pignose-layerslider .slide-visual .script-wrap .slide-controller a:focus,
-.pignose-layerslider .slide-visual .script-wrap .slide-controller a:hover {
+.pignose-parallaxslider .slide-visual .script-wrap .slide-controller a:focus,
+.pignose-parallaxslider .slide-visual .script-wrap .slide-controller a:hover {
 	opacity: 1;
 	filter: alpha(opacity=100);
 	-ms-filter: alpha(opacity=100);
 }
 
-.pignose-layerslider .slide-visual .script-wrap .script-group {
+.pignose-parallaxslider .slide-visual .script-wrap .script-group {
 	margin: 0;
 	padding: 0;
 	position: relative;
@@ -417,7 +417,7 @@
 	overflow: hidden;
 }
 
-.pignose-layerslider .slide-visual .script-wrap .script-group li {
+.pignose-parallaxslider .slide-visual .script-wrap .script-group li {
 	float: left;
 }</code></pre>
 				</div>
