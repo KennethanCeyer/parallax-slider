@@ -1,14 +1,14 @@
-PIGNOSE-LayerSlider
+PIGNOSE-ParallaxSlider
 ===================
 
-> This slider supports the parallax sliding effects.
+> The slider supports parallax slide effect.
 
 - Version 0.0.1
 - Licenced MIT
 - Update Aug, 04, 2014
 - This plugin supports most browser Internet Explorer 8+, Chrome, Firefox, Safari, Opera.
 
-![Sample](http://www.pigno.se/barn/PIGNOSE-LayerSlider/assets/img/sample.jpg)
+![Sample](http://www.pigno.se/barn/PIGNOSE-ParallaxSlider/assets/img/sample.jpg)
 
 ## Start
 
@@ -25,11 +25,11 @@ PIGNOSE-LayerSlider
 <script type="text/javascript" src="[[Your directory for javascript]]/jquery.easing.js"></script>
 ```
 
-- And load pignose-layerslider files(css, js)
+- And load pignose-parallaxslider files(css, js)
 
  ```html
- <link rel="stylesheet" href="assets/css/pignose.layerslider.min.css" />
- <script type="text/javascript" src="assets/js/pignose.layerslider.min.js"></script>
+ <link rel="stylesheet" href="assets/css/pignose.parallaxslider.min.css" />
+ <script type="text/javascript" src="assets/js/pignose.parallaxslider.min.js"></script>
 ```
 
 ### If you are using the Bower
@@ -37,14 +37,14 @@ PIGNOSE-LayerSlider
 1. open a command line and type this
 
  ```shell
-bower install pg-layerslider
+bower install pg-parallaxslider
  ```
  
-2. move `assets/js/pignose.layerslider.min.js` and `assets/css/pignose.layerslider.min.css` to your project folder.
+2. move `assets/js/pignose.parallaxslider.min.js` and `assets/css/pignose.parallaxslider.min.css` to your project folder.
 
 ## Usage
 
-- [Check demo and documents](http://www.pigno.se/barn/PIGNOSE-LayerSlider/)
+- [Check demo and documents](http://www.pigno.se/barn/PIGNOSE-ParallaxSlider/)
 
 > Refer to below exhibit.
 
@@ -88,7 +88,7 @@ bower install pg-layerslider
 
 ```javascript
 $(window).load(function() {
-	$('#visual').pignoseLayerSlider({
+	$('#visual').pignoseParallaxSlider({
 		play    : '.btn-play',
 		pause   : '.btn-pause',
 		next    : '.btn-next',
