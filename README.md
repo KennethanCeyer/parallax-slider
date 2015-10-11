@@ -34,7 +34,7 @@ PIGNOSE-ParallaxSlider
  <script type="text/javascript" src="assets/js/pignose.parallaxslider.min.js"></script>
 ```
 
-### If you are using the Bower
+### If you are using Bower
 
 1. open a command line and type this
 
@@ -43,6 +43,14 @@ bower install pg-parallaxslider
  ```
  
 2. move `assets/js/pignose.parallaxslider.min.js` and `assets/css/pignose.parallaxslider.min.css` to your project folder.
+
+### If you are using npm
+
+1. open a command line and type this
+
+ ```shell
+npm install pg-parallaxslider
+ ```
 
 ## Usage
 
