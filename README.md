@@ -3,7 +3,8 @@ PIGNOSE-ParallaxSlider
 
 > The slider supports parallax slide effect.
 
-- Version 0.0.2
+[![npm version](https://badge.fury.io/js/pg-parallaxslider.svg)](https://badge.fury.io/js/pg-parallaxslider)
+
 - Licenced MIT
 - Update Aug, 04, 2014
 - This plugin supports most browser Internet Explorer 8+, Chrome, Firefox, Safari, Opera.
