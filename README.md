@@ -3,10 +3,12 @@ PIGNOSE-ParallaxSlider
 
 > The slider supports parallax slide effect.
 
-- Version 0.0.1
+- Version 0.0.2
 - Licenced MIT
 - Update Aug, 04, 2014
 - This plugin supports most browser Internet Explorer 8+, Chrome, Firefox, Safari, Opera.
+- The plugin tested Safari for `MAC Platform`, This is definitely safe on Most Browsers!
+- Support `Bower`
 
 ![Sample](http://www.nhpcw.com/upload/2015-10-10%2B%25EC%2598%25A4%25EC%25A0%2584%2B1-03-59_101015010418.jpg)
 
