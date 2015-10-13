@@ -6,7 +6,6 @@ PIGNOSE-ParallaxSlider
 [![npm version](https://badge.fury.io/js/pg-parallaxslider.svg)](https://badge.fury.io/js/pg-parallaxslider) [![Join the chat at https://gitter.im/KennethanCeyer/PIGNOSE](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/KennethanCeyer/PIGNOSE?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 - Licenced MIT
-- Update Aug, 04, 2014
 - This plugin supports most browser Internet Explorer 8+, Chrome, Firefox, Safari, Opera.
 - The plugin tested Safari for `MAC Platform`, This is definitely safe on Most Browsers!
 - Support `Bower`
