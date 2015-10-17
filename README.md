@@ -3,7 +3,7 @@ PIGNOSE-ParallaxSlider
 
 > The slider supports parallax slide effect.
 
-[![npm version](https://badge.fury.io/js/pg-parallaxslider.svg)](https://badge.fury.io/js/pg-parallaxslider) [![Join the chat at https://gitter.im/KennethanCeyer/PIGNOSE](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/KennethanCeyer/PIGNOSE?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![npm version](https://badge.fury.io/js/pg-parallaxslider.svg)](https://badge.fury.io/js/pg-parallaxslider) [![Bower version](https://badge.fury.io/bo/pg-parallaxslider.svg)](https://badge.fury.io/bo/pg-parallaxslider) [![Join the chat at https://gitter.im/KennethanCeyer/PIGNOSE](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/KennethanCeyer/PIGNOSE?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 - Licenced MIT
 - This plugin supports most browser Internet Explorer 8+, Chrome, Firefox, Safari, Opera.
