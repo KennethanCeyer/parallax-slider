@@ -36,7 +36,7 @@ PIGNOSE-ParallaxSlider
 
 ### If you are using Bower
 
-1. open a command line and type this
+1. open terminal and type those command line.
 
  ```shell
 bower install pg-parallaxslider
