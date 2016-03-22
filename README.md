@@ -7,7 +7,7 @@ PIGNOSE-ParallaxSlider
 
 - Licenced under MIT
 - This plugin supports most browser Internet Explorer 8+, Chrome, Firefox, Safari, Opera.
-- And also this plugin tested Safari for `MAC Platform`, It is definitely safe on the most modern Browsers!
+- And also this plugin are tested Safari for `MAC Platform`, It is definitely safe on the most modern Browsers!
 
 ![Sample](http://www.nhpcw.com/upload/%25EB%258B%25A4%25EC%259A%25B4%25EB%25A1%259C%25EB%2593%259C%2B%25282%2529_021116021919.png)
 
