@@ -117,7 +117,7 @@ $(window).load(function() {
 | controlAnim | `boolean` | true | if you set this property to false, this plugin will ignore the status of animation queue. |
 | pagination | `boolean` | true | if you set this property to true, pagination controller will show. |
 | auto | `boolean` | true | if you set this property to true, this slider will start automatically. |
-| isLocal | `boolean` | true | this property set the container for play, stop, prev, next buttons |
+| isLocal | `boolean` | true | this property set the container for play, stop, prev and next buttons |
 | play | `jQuery object` | null | the jQuery object of play button. |
 | pause | `jQuery object` | null | the jQuery object of pause button. |
 | next | `jQuery object` | null | the jQuery object of next button. |
