@@ -6,12 +6,12 @@ PIGNOSE-ParallaxSlider
 [![npm version](https://badge.fury.io/js/pg-parallaxslider.svg)](https://badge.fury.io/js/pg-parallaxslider) [![Bower version](https://badge.fury.io/bo/pg-parallaxslider.svg)](https://badge.fury.io/bo/pg-parallaxslider) [![Join the chat at https://gitter.im/KennethanCeyer/PIGNOSE](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/KennethanCeyer/PIGNOSE?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 - Licenced under MIT
-- This plugin supports most browser Internet Explorer 8+, Chrome, Firefox, Safari, Opera.
-- And also this plugin are tested Safari for `MAC Platform`, It is definitely safe on the most modern Browsers!
+- This plugin supports most browsers including  Internet Explorer 8+, Chrome, Firefox, Safari and Opera.
+- And also this plugin tested on Safari for MAC Platform, It is definitely safe on the most modern Browsers!
 
 ![Sample](http://www.nhpcw.com/upload/%25EB%258B%25A4%25EC%259A%25B4%25EB%25A1%259C%25EB%2593%259C%2B%25282%2529_021116021919.png)
 
-## Getting Start
+## Getting Started
 
 ### Installation
 
@@ -33,7 +33,7 @@ PIGNOSE-ParallaxSlider
  <script type="text/javascript" src="assets/js/pignose.parallaxslider.min.js"></script>
 ```
 
-### If you are using Bower
+### If you use Bower
 
 1. open terminal and type those command line.
 
@@ -43,7 +43,7 @@ bower install pg-parallaxslider
  
 2. move `assets/js/pignose.parallaxslider.min.js` and `assets/css/pignose.parallaxslider.min.css` to your project folder.
 
-### If you are using npm
+### If you use npm
 
 1. open a command line and type this
 
@@ -126,7 +126,7 @@ $(window).load(function() {
 
 ## Issues
 
-> We are wating to hear your requests.
+> We are wating for your requests.
 
 Please report to us, If you find some problems.
 
