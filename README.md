@@ -5,29 +5,28 @@ PIGNOSE-ParallaxSlider
 
 [![npm version](https://badge.fury.io/js/pg-parallaxslider.svg)](https://badge.fury.io/js/pg-parallaxslider) [![Bower version](https://badge.fury.io/bo/pg-parallaxslider.svg)](https://badge.fury.io/bo/pg-parallaxslider) [![Join the chat at https://gitter.im/KennethanCeyer/PIGNOSE](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/KennethanCeyer/PIGNOSE?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-- Licenced MIT
+- Licenced under MIT
 - This plugin supports most browser Internet Explorer 8+, Chrome, Firefox, Safari, Opera.
-- The plugin tested Safari for `MAC Platform`, This is definitely safe on Most Browsers!
-- Support `Bower`
+- And also this plugin tested Safari for `MAC Platform`, It is definitely safe on the most modern Browsers!
 
 ![Sample](http://www.nhpcw.com/upload/%25EB%258B%25A4%25EC%259A%25B4%25EB%25A1%259C%25EB%2593%259C%2B%25282%2529_021116021919.png)
 
-## Start
+## Getting Start
 
 ### Installation
 
 > This plugin needs `jQuery` library.
 
 - Check the jQuery library at [here](http://jquery.com/download/) `Recommend version 1.11.x higher`
-- Also need jQuery easing library at [here](http://gsgd.co.uk/sandbox/jquery/easing/)
-- And insert the snippets
+- Also you need jQuery easing library at [here](http://gsgd.co.uk/sandbox/jquery/easing/) for animation.
+- And insert this snippets
 
  ```html
 <script type="text/javascript" src="[[Your directory for javascript]]/jquery.latest.min.js"></script>
 <script type="text/javascript" src="[[Your directory for javascript]]/jquery.easing.js"></script>
 ```
 
-- And load pignose-parallaxslider files(css, js)
+- import pignose-parallaxslider files(css, js)
 
  ```html
  <link rel="stylesheet" href="assets/css/pignose.parallaxslider.min.css" />
@@ -127,8 +126,8 @@ $(window).load(function() {
 
 ## Issues
 
-> We are welcome about announcing the issue.
+> We are wating to hear your requests.
 
-Please inform us, If you find some problems.
+Please announce us, If you find some problem.
 
 Thank you!
