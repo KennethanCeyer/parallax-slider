@@ -128,6 +128,6 @@ $(window).load(function() {
 
 > We are wating to hear your requests.
 
-Please announce us, If you find some problem.
+Please report to us, If you find some problems.
 
 Thank you!
