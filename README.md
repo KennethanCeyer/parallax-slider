@@ -83,10 +83,10 @@ npm install pg-parallaxslider
 				<li><div class="inner-script"><img src="http://placehold.it/276x288/f8f8f8/b71200" alt="thumbnail slider image" /></div></li>
 			</ul>
 			<div class="slide-controller">
-				<a href="#" class="btn-prev"><img src="assets/img/btn_prev.png" alt="prev Slide" /></a>
-				<a href="#" class="btn-play"><img src="assets/img/btn_play.png" alt="start Slide" /></a>
-				<a href="#" class="btn-pause"><img src="assets/img/btn_pause.png" alt="pause Slide" /></a>
-				<a href="#" class="btn-next"><img src="assets/img/btn_next.png" alt="next Slide" /></a>
+				<a href="#" class="btn-prev"><img src="assets/img/btn_prev.png" alt="prev slide" /></a>
+				<a href="#" class="btn-play"><img src="assets/img/btn_play.png" alt="start slide" /></a>
+				<a href="#" class="btn-pause"><img src="assets/img/btn_pause.png" alt="pause slide" /></a>
+				<a href="#" class="btn-next"><img src="assets/img/btn_next.png" alt="next slide" /></a>
 			</div>
 		</div>
 	</div>
