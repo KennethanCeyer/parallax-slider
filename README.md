@@ -29,8 +29,8 @@ PIGNOSE-ParallaxSlider
 - import pignose-parallaxslider files(css, js)
 
  ```html
- <link rel="stylesheet" href="assets/css/pignose.parallaxslider.min.css" />
- <script type="text/javascript" src="assets/js/pignose.parallaxslider.min.js"></script>
+ <link rel="stylesheet" href="dist/css/pignose.parallaxslider.min.css" />
+ <script type="text/javascript" src="dist/js/pignose.parallaxslider.min.js"></script>
 ```
 
 ### If you use Bower
@@ -41,7 +41,7 @@ PIGNOSE-ParallaxSlider
 bower install pg-parallaxslider
  ```
  
-2. move `assets/js/pignose.parallaxslider.min.js` and `assets/css/pignose.parallaxslider.min.css` to your project folder.
+2. move `dist/js/pignose.parallaxslider.min.js` and `dist/css/pignose.parallaxslider.min.css` to your project folder.
 
 ### If you use npm
 
@@ -64,29 +64,29 @@ npm install pg-parallaxslider
 	<div class="slide-visual">
 		<!-- Slide Image Area (1000 x 424) -->
 		<ul class="slide-group">
-			<li><img src="assets/img/visual_slide01.jpg" alt="Slider Image" /></li>
-			<li><img src="assets/img/visual_slide02.jpg" alt="Slider Image" /></li>
-			<li><img src="assets/img/visual_slide03.jpg" alt="Slider Image" /></li>
-			<li><img src="assets/img/visual_slide04.jpg" alt="Slider Image" /></li>
-			<li><img src="assets/img/visual_slide05.jpg" alt="Slider Image" /></li>
-			<li><img src="assets/img/visual_slide06.jpg" alt="Slider Image" /></li>
+			<li><img src="assets/img/visual_slide01.jpg" alt="slider image" /></li>
+			<li><img src="assets/img/visual_slide02.jpg" alt="slider image" /></li>
+			<li><img src="assets/img/visual_slide03.jpg" alt="slider image" /></li>
+			<li><img src="assets/img/visual_slide04.jpg" alt="slider image" /></li>
+			<li><img src="assets/img/visual_slide05.jpg" alt="slider image" /></li>
+			<li><img src="assets/img/visual_slide06.jpg" alt="slider image" /></li>
 		</ul>
 
 		<!-- Slide Description Image Area (316 x 328) -->
 		<div class="script-wrap">
 			<ul class="script-group">
-				<li><div class="inner-script"><img src="http://placehold.it/276x288/f8f8f8/b71200" alt="Thumbnail Slider Image" /></div></li>
-				<li><div class="inner-script"><img src="http://placehold.it/276x288/f8f8f8/b71200" alt="Thumbnail Slider Image" /></div></li>
-				<li><div class="inner-script"><img src="http://placehold.it/276x288/f8f8f8/b71200" alt="Thumbnail Slider Image" /></div></li>
-				<li><div class="inner-script"><img src="http://placehold.it/276x288/f8f8f8/b71200" alt="Thumbnail Slider Image" /></div></li>
-				<li><div class="inner-script"><img src="http://placehold.it/276x288/f8f8f8/b71200" alt="Thumbnail Slider Image" /></div></li>
-				<li><div class="inner-script"><img src="http://placehold.it/276x288/f8f8f8/b71200" alt="Thumbnail Slider Image" /></div></li>
+				<li><div class="inner-script"><img src="http://placehold.it/276x288/f8f8f8/b71200" alt="thumbnail slider image" /></div></li>
+				<li><div class="inner-script"><img src="http://placehold.it/276x288/f8f8f8/b71200" alt="thumbnail slider image" /></div></li>
+				<li><div class="inner-script"><img src="http://placehold.it/276x288/f8f8f8/b71200" alt="thumbnail slider image" /></div></li>
+				<li><div class="inner-script"><img src="http://placehold.it/276x288/f8f8f8/b71200" alt="thumbnail slider image" /></div></li>
+				<li><div class="inner-script"><img src="http://placehold.it/276x288/f8f8f8/b71200" alt="thumbnail slider image" /></div></li>
+				<li><div class="inner-script"><img src="http://placehold.it/276x288/f8f8f8/b71200" alt="thumbnail slider image" /></div></li>
 			</ul>
 			<div class="slide-controller">
-				<a href="#" class="btn-prev"><img src="assets/img/btn_prev.png" alt="Prev Slide" /></a>
-				<a href="#" class="btn-play"><img src="assets/img/btn_play.png" alt="Start Slide" /></a>
-				<a href="#" class="btn-pause"><img src="assets/img/btn_pause.png" alt="Pause Slide" /></a>
-				<a href="#" class="btn-next"><img src="assets/img/btn_next.png" alt="Next Slide" /></a>
+				<a href="#" class="btn-prev"><img src="assets/img/btn_prev.png" alt="prev Slide" /></a>
+				<a href="#" class="btn-play"><img src="assets/img/btn_play.png" alt="start Slide" /></a>
+				<a href="#" class="btn-pause"><img src="assets/img/btn_pause.png" alt="pause Slide" /></a>
+				<a href="#" class="btn-next"><img src="assets/img/btn_next.png" alt="next Slide" /></a>
 			</div>
 		</div>
 	</div>
