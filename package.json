@@ -1,10 +1,10 @@
 {
   "name": "pg-parallaxslider",
-  "version": "1.0.0",
-  "description": "0.0.2",
+  "version": "1.0.1",
+  "description": "1.0.1",
   "main": "index.html",
   "scripts": {
-    "test": "The slider to support prallax animation with jQuery."
+    "test": "jQuery slider supporting parallax effects."
   },
   "repository": {
     "type": "git",
