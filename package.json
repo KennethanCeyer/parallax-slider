@@ -1,7 +1,7 @@
 {
   "name": "pg-parallaxslider",
-  "version": "1.0.1",
-  "description": "1.0.1",
+  "version": "1.0.2",
+  "description": "1.0.2",
   "main": "index.html",
   "scripts": {
     "test": "jQuery slider supporting parallax effects."
