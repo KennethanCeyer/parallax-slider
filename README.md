@@ -1,13 +1,13 @@
 PIGNOSE-ParallaxSlider
 ===================
 
-> jQuery slider supporting parallax effects.
+> jQuery slider plugin that is supported "Parallax-scrolling" effect.
 
 [![npm version](https://badge.fury.io/js/pg-parallaxslider.svg)](https://badge.fury.io/js/pg-parallaxslider) [![Bower version](https://badge.fury.io/bo/pg-parallaxslider.svg)](https://badge.fury.io/bo/pg-parallaxslider) [![Join the chat at https://gitter.im/KennethanCeyer/PIGNOSE](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/KennethanCeyer/PIGNOSE?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 - Licenced under MIT
 - This plugin supports most browsers including  Internet Explorer 8+, Chrome, Firefox, Safari and Opera.
-- And also this plugin tested on Safari for MAC Platform, It is definitely safe on the most modern Browsers!
+- And also tested on Safari for MAC Platform, It is definitely safe on the most modern Browsers!
 
 ![Sample](http://www.nhpcw.com/upload/%25EB%258B%25A4%25EC%259A%25B4%25EB%25A1%259C%25EB%2593%259C%2B%25282%2529_021116021919.png)
 
