@@ -1,11 +1,7 @@
 {
   "name": "pg-parallaxslider",
-  "version": "1.0.2",
-  "description": "1.0.2",
-  "main": "index.html",
-  "scripts": {
-    "test": "jQuery slider supporting parallax effects."
-  },
+  "version": "1.0.3",
+  "description": "jQuery slider supporting parallax effects.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KennethanCeyer/PIGNOSE-PrallaxSlider.git"
